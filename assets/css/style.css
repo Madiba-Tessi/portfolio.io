@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2a9d8f;
+}
+
+a {
+    color: #e76f51;
+}
+
+a:hover {
+    color: #f4a261;
+}
+
+button {
+    background-color: #264653;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a9d8f;
+}
+
+/* New Styles for Intro Section */
+#intro {
+    text-align: left;
+    padding: 2em 0;
+    position: relative;
+}
+
+
+
+#intro .profile-picture {
+    width: 250px;
+    height: 250px;
+    margin-left: 3em;
+    margin-bottom: 20em;
+    border-radius: 55%;
+    border: 5px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+#intro .intro-content {
+    padding-top: 20px;
+    text-align: center;
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    margin-bottom: 200px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .post {
+        margin-bottom: 20px;
+    }
+
+    .image.main {
+        width: 100%;
+        height: auto;
+    }
+
+    .actions.special {
+        text-align: center;
+    }
+
+    #intro .profile-picture {
+        width: 200px;
+        height: 200px;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #intro .intro-content {
+       
+        text-align: center;
+    }
+}
